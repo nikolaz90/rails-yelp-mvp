@@ -1,4 +1,18 @@
-<h1>Restaurants</h1>
-<% @restaurants.each do |item| %>
-  <%= item %>
-<% end %>
+<section class="home-section">
+  <div class="container">
+    <h3>Reviewed restaurants</h3>
+    <div class="restaurant-article-container">
+      <% @restaurants.each do |item| %>
+        <%= link_to restaurant_path(item) do %>
+          <article class="home-section-restaurant-article">
+            <h5><%= item.name %></h5>
+            <p><%= "address : #{item.address}"%></p>
+            <p><%= "food: #{item.category} specialities" %></p>
+            <p><%= "phone : #{item.phone_number}" %></p>
+            <img src="https://cdn.pixabay.com/photo/2016/03/27/21/34/restaurant-1284351_1280.jpg">
+          </article>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</section>

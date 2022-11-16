@@ -1,0 +1,42 @@
+.restaurant-article-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.home-section-restaurant-article {
+  min-width: 18rem;
+  position: relative;
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #D3F9F7;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.home-section-restaurant-article:hover {
+  border-radius: 1rem;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-section-restaurant-article h5 {
+  font-size: 1.5rem;
+}
+
+.home-section-restaurant-article img {
+  position: absolute;
+  top: -2.5rem;
+  right: 1rem;
+  height: 5rem;
+  width: 5rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.home-section-restaurant-article:hover img {
+  border-radius: 0.5rem;
+}

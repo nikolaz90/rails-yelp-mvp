@@ -1,0 +1,8 @@
+.restaurant-review-article {
+  text-align: center;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  border: 0.5;
+  transition: all ease-in-out 0.3s;
+}
